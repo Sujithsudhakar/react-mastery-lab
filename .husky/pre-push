@@ -36,4 +36,7 @@ echo "Running pre-push checks..."
 
 npm run verify || exit 1
 
+# Run vulnerability audit
+npm run audit || exit 1
+
 echo "All pre-push checks passed."

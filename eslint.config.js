@@ -7,7 +7,12 @@ import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
   {
-    ignores: ['coverage/**', 'dist/**', 'node_modules/**'],
+    ignores: [
+      'coverage/**',
+      'dist/**',
+      'node_modules/**',
+      'storybook-static/**',
+    ],
   },
   {
     extends: [js.configs.recommended, ...tseslint.configs.strictTypeChecked],
@@ -16,7 +21,11 @@ export default tseslint.config(
       ecmaVersion: 2020,
       globals: globals.browser,
       parserOptions: {
-        project: ['./tsconfig.json', './tsconfig.node.json'],
+        project: [
+          './tsconfig.json',
+          './tsconfig.node.json',
+          './.storybook/tsconfig.json',
+        ],
         tsconfigRootDir: import.meta.dirname,
       },
     },
