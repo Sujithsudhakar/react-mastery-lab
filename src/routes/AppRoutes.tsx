@@ -1,10 +1,10 @@
 import { Route, Routes } from 'react-router-dom';
-import AppLayout from './components/AppLayout';
-import AboutPage from './pages/AboutPage';
-import HomePage from './pages/HomePage';
-import NotFoundPage from './pages/NotFoundPage';
+import AppLayout from '@/components/AppLayout';
+import AboutPage from '@/pages/AboutPage';
+import HomePage from '@/pages/HomePage';
+import NotFoundPage from '@/pages/NotFoundPage';
 
-function App() {
+function AppRoutes() {
   return (
     <Routes>
       <Route path="/" element={<AppLayout />}>
@@ -16,4 +16,4 @@ function App() {
   );
 }
 
-export default App;
+export default AppRoutes;

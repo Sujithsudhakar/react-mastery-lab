@@ -1,0 +1,19 @@
+{
+  "css.lint.unknownAtRules": "ignore",
+  "scss.lint.unknownAtRules": "ignore",
+  "terminal.integrated.fontFamily": "",
+  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.letterSpacing": 0,
+  "terminal.integrated.lineHeight": 1.1,
+  "js/ts.suggest.autoImports": true,
+  "js/ts.preferences.importModuleSpecifier": "non-relative",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  },
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "tailwindCSS.includeLanguages": {
+    "scss": "css"
+  }
+}
