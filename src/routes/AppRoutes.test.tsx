@@ -29,9 +29,10 @@ describe('AppRoutes', () => {
     expect(
       screen.getByRole('heading', { name: /page not found/i }),
     ).toBeInTheDocument();
-    expect(
-      screen.getByRole('link', { name: /go back home/i }),
-    ).toHaveAttribute('href', '/');
+    expect(screen.getByRole('link', { name: /go back home/i })).toHaveAttribute(
+      'href',
+      '/',
+    );
   });
 
   it('navigates between pages from the layout links', async () => {

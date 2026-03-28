@@ -1,5 +1,5 @@
-import { NavLink, Outlet } from 'react-router-dom';
 import type { NavLinkRenderProps } from 'react-router-dom';
+import { NavLink, Outlet } from 'react-router-dom';
 
 const linkClassName = ({ isActive }: NavLinkRenderProps) =>
   [

@@ -9,11 +9,10 @@ describe('NotFoundPage', () => {
     expect(
       screen.getByRole('heading', { name: /page not found/i }),
     ).toBeInTheDocument();
-    expect(
-      screen.getByText(/does not exist yet/i),
-    ).toBeInTheDocument();
-    expect(
-      screen.getByRole('link', { name: /go back home/i }),
-    ).toHaveAttribute('href', '/');
+    expect(screen.getByText(/does not exist yet/i)).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: /go back home/i })).toHaveAttribute(
+      'href',
+      '/',
+    );
   });
 });

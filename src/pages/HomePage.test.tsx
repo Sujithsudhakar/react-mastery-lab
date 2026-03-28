@@ -9,8 +9,6 @@ describe('HomePage', () => {
     expect(
       screen.getByRole('heading', { name: /welcome/i }),
     ).toBeInTheDocument();
-    expect(
-      screen.getByText(/your base project is ready/i),
-    ).toBeInTheDocument();
+    expect(screen.getByText(/your base project is ready/i)).toBeInTheDocument();
   });
 });
