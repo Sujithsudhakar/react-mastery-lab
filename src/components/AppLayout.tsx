@@ -12,7 +12,7 @@ const linkClassName = ({ isActive }: NavLinkRenderProps) =>
 
 function AppLayout() {
   return (
-      <div className="mx-auto w-[min(960px,calc(100%-2rem))] py-8 md:py-12">
+    <div className="mx-auto w-[min(960px,calc(100%-2rem))] py-8 md:py-12">
       <header className="rounded-[28px] border border-sky-100/10 bg-slate-900/90 p-6 shadow-panel md:p-8">
         <p className="mb-3 text-xs font-semibold uppercase tracking-[0.32em] text-sky-300/80">
           React Mastery Lab
