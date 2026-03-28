@@ -31,6 +31,9 @@ function AppLayout() {
           <NavLink to="/about" className={linkClassName}>
             About
           </NavLink>
+          <NavLink to="/contact-us" className={linkClassName}>
+            Contact US
+          </NavLink>
         </nav>
       </header>
 

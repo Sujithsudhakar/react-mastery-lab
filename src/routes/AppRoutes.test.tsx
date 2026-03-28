@@ -23,6 +23,14 @@ describe('AppRoutes', () => {
     ).toBeInTheDocument();
   });
 
+  it('renders the contact us page for the contact-us route', () => {
+    renderWithRouter(<AppRoutes />, { route: '/contact-us' });
+
+    expect(
+      screen.getByRole('heading', { name: /contact us/i }),
+    ).toBeInTheDocument();
+  });
+
   it('renders the not found page for unknown routes', () => {
     renderWithRouter(<AppRoutes />, { route: '/missing' });
 
@@ -44,6 +52,12 @@ describe('AppRoutes', () => {
 
     expect(
       screen.getByRole('heading', { name: /about this starter/i }),
+    ).toBeInTheDocument();
+
+    await user.click(screen.getByRole('link', { name: /contact us/i }));
+
+    expect(
+      screen.getByRole('heading', { name: /contact us/i }),
     ).toBeInTheDocument();
   });
 });
