@@ -83,6 +83,12 @@ npm run test:coverage
 Runs tests with V8 coverage reporting and generates the HTML report in `coverage/`.
 
 ```bash
+npm run verify
+```
+
+Runs the full quality gate used before pushes: build, lint, tests, and coverage.
+
+```bash
 npm run coverage:serve
 ```
 
@@ -131,6 +137,19 @@ The project includes tests for:
 Current coverage is configured through Vitest using the V8 coverage provider.
 
 To view the generated HTML report in a browser, use either `npm run coverage:serve` or `npm run coverage:preview`.
+
+## Push Safety
+
+This project includes a project-level Husky `pre-push` hook in `.husky/pre-push`.
+
+Before any push is allowed, it runs:
+
+- `npm run build`
+- `npm run lint`
+- `npm test`
+- `npm run test:coverage`
+
+If any of these checks fail, the push is blocked.
 
 ## Styling
 
