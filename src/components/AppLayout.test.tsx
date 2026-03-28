@@ -11,6 +11,8 @@ describe('AppLayout', () => {
     ).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /home/i })).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /about/i })).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: /contact us/i })).toBeInTheDocument();
+    expect(
+      screen.getByRole('link', { name: /contact us/i }),
+    ).toBeInTheDocument();
   });
 });
