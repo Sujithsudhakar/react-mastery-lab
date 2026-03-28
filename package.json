@@ -6,6 +6,13 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "docker:build": "docker build -t react-mastery-lab .",
+    "docker:run": "docker run -d --rm --name react-mastery-lab -p 80:80 react-mastery-lab",
+    "docker:release": "npm run docker:build && npm run docker:run",
+    "docker:ps": "docker ps",
+    "docker:stop": "docker stop react-mastery-lab",
+    "docker:remove": "docker rmi react-mastery-lab",
+    "docker:cleanup": "docker stop react-mastery-lab && docker rmi react-mastery-lab",
     "format": "prettier . --write",
     "format:check": "prettier . --check",
     "lint": "eslint .",
@@ -63,6 +70,8 @@
     "typescript": "^5.6.3",
     "typescript-eslint": "^8.57.2",
     "vite": "^5.4.19",
-    "vitest": "^4.1.2"
+    "vite-plugin-pwa": "^1.2.0",
+    "vitest": "^4.1.2",
+    "workbox-window": "^7.4.0"
   }
 }

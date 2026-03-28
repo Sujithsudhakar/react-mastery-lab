@@ -25,7 +25,7 @@ function AppLayout() {
           exercises and pages in as you grow the app.
         </p>
         <nav className="mt-8 flex flex-wrap gap-3">
-          <NavLink to="/" end className={linkClassName}>
+          <NavLink to="/home" end className={linkClassName}>
             Home
           </NavLink>
           <NavLink to="/about" className={linkClassName}>

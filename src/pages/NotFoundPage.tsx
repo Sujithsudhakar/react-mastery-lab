@@ -11,7 +11,7 @@ function NotFoundPage() {
       </p>
       <Link
         className="inline-flex rounded-full border border-sky-300/30 px-4 py-2 text-sm font-medium text-sky-300 transition hover:-translate-y-0.5 hover:border-sky-200/60 hover:text-sky-200"
-        to="/"
+        to="/home"
       >
         Go back home
       </Link>

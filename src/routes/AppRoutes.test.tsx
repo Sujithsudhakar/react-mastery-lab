@@ -31,7 +31,7 @@ describe('AppRoutes', () => {
     ).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /go back home/i })).toHaveAttribute(
       'href',
-      '/',
+      '/home',
     );
   });
 

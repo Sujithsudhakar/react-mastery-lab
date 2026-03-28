@@ -20,7 +20,7 @@ React Mastery Lab is a small starter app for practicing modern React development
 - Home, About, and Not Found pages
 - Tailwind CSS styling with an SCSS entry file
 - Custom favicon
-- Basic SEO metadata, `robots.txt`, and web manifest
+- Basic SEO metadata, `robots.txt`, web manifest, and PWA support
 - Unit and route tests with coverage support
 
 ## Getting Started
@@ -63,6 +63,29 @@ npm run preview
 ```
 
 Builds the app and serves the production output locally.
+
+## Docker
+
+Build the production image:
+
+```bash
+npm run docker:build
+```
+
+Run the container:
+
+```bash
+npm run docker:run
+```
+
+Build and run in one step:
+
+```bash
+npm run docker:release
+```
+
+Then open `http://localhost:8080`.
+For the production-style route prefix, use `http://localhost/react-mastery-lab/home`.
 
 ```bash
 npm run test

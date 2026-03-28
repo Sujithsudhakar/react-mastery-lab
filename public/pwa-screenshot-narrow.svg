@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="750" height="1334" viewBox="0 0 750 1334">
+  <rect width="750" height="1334" fill="#020617" />
+  <rect x="28" y="28" width="694" height="1278" rx="28" fill="#0f172a" stroke="#1e293b" />
+  <text
+    x="64"
+    y="86"
+    fill="#7dd3fc"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="18"
+    font-weight="700"
+    letter-spacing="4"
+  >
+    REACT MASTERY LAB
+  </text>
+  <text
+    x="64"
+    y="168"
+    fill="#f8fafc"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="48"
+    font-weight="800"
+  >
+    Build your React
+  </text>
+  <text
+    x="64"
+    y="224"
+    fill="#f8fafc"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="48"
+    font-weight="800"
+  >
+    skills one component
+  </text>
+  <text
+    x="64"
+    y="280"
+    fill="#f8fafc"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="48"
+    font-weight="800"
+  >
+    at a time.
+  </text>
+  <text
+    x="64"
+    y="352"
+    fill="#94a3b8"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="24"
+  >
+    Modern starter project with routing,
+  </text>
+  <text
+    x="64"
+    y="390"
+    fill="#94a3b8"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="24"
+  >
+    testing, and polished UI defaults.
+  </text>
+  <rect x="64" y="450" width="132" height="56" rx="28" fill="#60a5fa" />
+  <text
+    x="130"
+    y="486"
+    text-anchor="middle"
+    fill="#0f172a"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="24"
+    font-weight="700"
+  >
+    Home
+  </text>
+  <rect x="214" y="450" width="132" height="56" rx="28" fill="#1e293b" stroke="#334155" />
+  <text
+    x="280"
+    y="486"
+    text-anchor="middle"
+    fill="#cbd5e1"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="24"
+    font-weight="700"
+  >
+    About
+  </text>
+  <rect x="64" y="584" width="622" height="252" rx="24" fill="#111827" stroke="#1e293b" />
+  <text
+    x="96"
+    y="662"
+    fill="#f8fafc"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="42"
+    font-weight="800"
+  >
+    Welcome
+  </text>
+  <text
+    x="96"
+    y="722"
+    fill="#94a3b8"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="24"
+  >
+    Your base project is ready.
+  </text>
+  <text
+    x="96"
+    y="758"
+    fill="#94a3b8"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="24"
+  >
+    Add components, routes, and
+  </text>
+  <text
+    x="96"
+    y="794"
+    fill="#94a3b8"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="24"
+  >
+    styling as you build each lesson.
+  </text>
+</svg>

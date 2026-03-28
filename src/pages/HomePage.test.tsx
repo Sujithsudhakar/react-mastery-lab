@@ -1,6 +1,6 @@
-import { screen } from '@testing-library/react';
 import HomePage from '@/pages/HomePage';
 import { renderWithRouter } from '@/test/utils';
+import { screen } from '@testing-library/react';
 
 describe('HomePage', () => {
   it('renders the welcome heading and starter copy', () => {

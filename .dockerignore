@@ -1,0 +1,13 @@
+node_modules
+dist
+coverage
+storybook-static
+.git
+.gitignore
+.husky
+.vscode
+.env
+.env.*
+build-storybook.log
+Dockerfile*
+README.md

@@ -16,7 +16,7 @@ type Story = StoryObj<typeof meta>;
 
 export const HomeRoute: Story = {
   render: () => (
-    <MemoryRouter initialEntries={['/']}>
+    <MemoryRouter initialEntries={['/home']}>
       <AppRoutes />
     </MemoryRouter>
   ),

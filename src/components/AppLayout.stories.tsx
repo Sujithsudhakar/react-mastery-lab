@@ -18,10 +18,10 @@ type Story = StoryObj<typeof meta>;
 
 export const HomeView: Story = {
   render: () => (
-    <MemoryRouter initialEntries={['/']}>
+    <MemoryRouter initialEntries={['/home']}>
       <Routes>
         <Route path="/" element={<AppLayout />}>
-          <Route index element={<HomePage />} />
+          <Route path="home" element={<HomePage />} />
         </Route>
       </Routes>
     </MemoryRouter>
