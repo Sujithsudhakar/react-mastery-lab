@@ -9,7 +9,7 @@ describe('AppLayout', () => {
     expect(
       screen.getByRole('heading', { name: /build your react skills/i }),
     ).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: /homes/i })).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: /home/i })).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /about/i })).toBeInTheDocument();
   });
 });
