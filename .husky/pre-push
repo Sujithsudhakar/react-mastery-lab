@@ -1,5 +1,37 @@
 #!/bin/sh
 
+REMOTE_NAME="${1:-origin}"
+CURRENT_BRANCH="$(git branch --show-current)"
+
+if [ -n "$CURRENT_BRANCH" ]; then
+  echo "Checking remote branch status..."
+
+  git fetch "$REMOTE_NAME" "$CURRENT_BRANCH" --quiet || {
+    echo "Failed to fetch the latest remote branch state."
+    exit 1
+  }
+
+  REMOTE_REF="refs/remotes/$REMOTE_NAME/$CURRENT_BRANCH"
+
+  if git rev-parse "$REMOTE_REF" >/dev/null 2>&1; then
+    LOCAL_SHA="$(git rev-parse HEAD)"
+    REMOTE_SHA="$(git rev-parse "$REMOTE_REF")"
+    BASE_SHA="$(git merge-base HEAD "$REMOTE_REF")"
+
+    if [ "$LOCAL_SHA" = "$BASE_SHA" ] && [ "$LOCAL_SHA" != "$REMOTE_SHA" ]; then
+      echo "Your branch is behind $REMOTE_NAME/$CURRENT_BRANCH."
+      echo "Pull the latest changes before pushing so you do not overwrite remote work."
+      exit 1
+    fi
+
+    if [ "$REMOTE_SHA" != "$BASE_SHA" ] && [ "$LOCAL_SHA" != "$REMOTE_SHA" ]; then
+      echo "Your branch has diverged from $REMOTE_NAME/$CURRENT_BRANCH."
+      echo "Pull and reconcile the branch before pushing."
+      exit 1
+    fi
+  fi
+fi
+
 echo "Running pre-push checks..."
 
 npm run verify || exit 1

@@ -144,12 +144,14 @@ This project includes a project-level Husky `pre-push` hook in `.husky/pre-push`
 
 Before any push is allowed, it runs:
 
+- a remote sync check to ensure your branch is not behind or diverged
 - `npm run build`
+- `npm run format:check`
 - `npm run lint`
 - `npm test`
 - `npm run test:coverage`
 
-If any of these checks fail, the push is blocked.
+If the remote branch has newer commits, or if any of these checks fail, the push is blocked until you pull and reconcile the branch first.
 
 ## Styling
 
